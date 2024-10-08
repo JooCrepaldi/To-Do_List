@@ -5,4 +5,8 @@
     outline: none;
 }
 
-/*depois começar pelo :root
+/*depois começar pelo :root*/
+
+body{
+    font-family: Poppins;
+}
