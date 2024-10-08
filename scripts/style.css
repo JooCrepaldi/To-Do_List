@@ -3,10 +3,54 @@
     padding: 0;
     border: none;
     outline: none;
+
 }
 
-/*depois começar pelo :root*/
+:root{
+    --basecolor: #1D64F2;
+    --secobasecolor:#F2F2F2;
+    --auxicolor:#1B78F2;
+    --bigcolor1:#0B438C;
+    --bigcolor2:#BFF205;
+}
+
 
 body{
-    font-family: Poppins;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--basecolor);
+}
+
+.box{
+    font-family: Space Grotesk;
+    background-color:var(--secobasecolor);
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+/*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border: var(--auxicolor) solid 2px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--bigcolor2);
+}
+
+:hover button{
+
 }
