@@ -7,13 +7,12 @@
 }
 
 :root {
-    --basecolor: #e7e7e7;
-    --secobasecolor: #fbfbfb;
+    --basecolor: #fefefe;
+    --secobasecolor: #f0f0f0;
+    --thirdcolor: #ffff;
     --auxicolor: #373738;
-    --bigcolor1: #6d747d;
-    --bigcolor2: #BFF205;
+    --bigcolor2: #f2b705;
 }
-
 
 body {
     display: flex;
@@ -24,31 +23,46 @@ body {
 }
 
 .box {
-    font-family: Space Grotesk;
-    background-color: var(--secobasecolor);
-    width: 500px;
-    height: 150px;
-    border-radius: 10px;
-    /*flex*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 
-input {
-    width: 300px;
-    height: 40px;
-    border: var(--auxicolor) solid 2px;
-    border-radius: 20px;
-    padding: 5px;
+form{
+    margin-bottom: 10px;
 }
 
-button {
+#taskwriter{
+    border: #000 solid 1px;
+    width: 400px;
+    height: 30px;
+}
+
+#adbtn{
     width: 60px;
-    height: 60px;
-    border-radius: 10px;
+    height: 30px;
     background-color: var(--bigcolor2);
 }
 
-:hover button {}
+#tasklist{
+    display: flex;
+    flex-direction: column;
+}
+
+#tasklist li{
+    width: 435px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+#tasklist li:nth-child(odd) {
+    background-color: var(--secobasecolor);
+  }
+  
+  #tasklist li:nth-child(even) {
+    background-color: var(--thirdcolor);
+  }

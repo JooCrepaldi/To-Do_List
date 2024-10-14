@@ -15,13 +15,27 @@
 <body>
 
     <div class="box">
-        <h1>To-do list</h1>
         <form>
-            <input type="text" id="taskwriter" placeholder="Lição de casa" aria-label="escreva uma tarefa">
-            <button type="submit" aria-label="ad">+</button>
+            <input type="text" id="taskwriter" aria-label="escreva uma tarefa">
+            <button type="submit" id="adbtn" aria-label="botão de adicionar">+</button>
         </form>
 
-        <ul id="taskList"></ul>
+        <ul id="tasklist">
+            <li>
+                <input type="checkbox" id="task1">
+                <label for="task1">Task 1</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="task2">
+                <label for="task2">Task 2</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="task3">
+                <label for="task3">Task 3</label>
+            </li>
+        </ul>
     </div>
 
 </body>
